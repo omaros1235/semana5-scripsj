@@ -1,0 +1,73 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlace a Google Fonts para la fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-gray-100 flex items-center justify-center min-h-screen py-8">
+    <div class="container bg-white p-8 rounded-xl shadow-lg w-full max-w-4xl">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Galería de Imágenes Interactiva</h1>
+<title><style5.css="c"></style5></title>
+        <!-- Sección para agregar imágenes -->
+        <div class="input-section flex flex-col sm:flex-row gap-4 mb-8">
+            <input
+                type="url"
+                id="image1.jpeg"
+                placeholder="Introduce la URL de la imagen aquí"
+                class="flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+            >
+            <button
+                id="addImageButton"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 ease-in-out transform hover:scale-105"
+            >
+                Agregar Imagen
+            </button>
+        </div>
+
+        <!-- Botón para eliminar imágenes -->
+        <div class="mb-8 text-center">
+            <button
+                id="deleteImageButton"
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 ease-in-out transform hover:scale-105"
+            >
+                Eliminar Imagen Seleccionada
+            </button>
+        </div>
+
+        <!-- Contenedor de la galería de imágenes -->
+        <div id="image1.jpeg" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Las imágenes se agregarán dinámicamente aquí -->
+            <div class="image-1.jpeg rounded-xl overflow-hidden shadow-md flex items-center justify-center bg-gray-200 text-gray-500 text-sm">
+                <img src="https://placehold.co/400x300/e0e0e0/555555?text=Imagen+por+Defecto+1" alt="img1.jpeg" class="w-full h-auto object-cover rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105">
+            </div>
+            <div class="image-wrapper default-image rounded-xl overflow-hidden shadow-md flex items-center justify-center bg-gray-200 text-gray-500 text-sm">
+                <img src="https://placehold.co/400x300/d0d0d0/444444?text=Imagen+por+Defecto+2" alt="imagen.copy.png" class="w-full h-auto object-cover rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105">
+            </div>
+            <div class="image-wrapper default-image rounded-xl overflow-hidden shadow-md flex items-center justify-center bg-gray-200 text-gray-500 text-sm">
+                <img src="https://placehold.co/400x300/c0c0c0/333333?text=Imagen+por+Defecto+3" alt="Imagen por defecto 3" class="w-full h-auto object-cover rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105">
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Tailwind CSS para clases utilitarias -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
