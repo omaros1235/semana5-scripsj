@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
-    background-color: #21a239; /* Color de fondo ligero */
+    background-color: #213fa2; /* Color de fondo ligero */
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
